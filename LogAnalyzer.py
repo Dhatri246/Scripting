@@ -1,19 +1,40 @@
 import os
-from pathlib import Path
+import argparse
 
-def checkPath(file_path):
+
+def check_path(file_path):
+
     if os.path.exists(file_path):
-        readFile(file_path)
+        read_file(file_path)
     else:
         print("File does not exist!")   
 
 
-def readFile(file_path):
+def read_file(file_path):
 
-    file = open(file_path).read()
-    print(file)
+    with open(file_path, "r") as file:
+    #file = open(file_path).read()
+    # Using 'with' ensures the file is safely closed after reading
+        for line in file:
+            if "connection error" in line.lower():
+                print(line.strip())
+            else:
+                print("no error")       #debug
     
 
 def main():
-    file_path = input("Enter a valid file path: ")
-    checkPath(file_path)
+    
+    # file_path = input("Enter a valid file path: ")
+    # check_path(file_path)
+
+    parser = argparse.ArgumentParser(description = "Scan and filter log files.") 
+    parser.add_argument("-f", "--filepath", required=True, help="path to log file")
+
+    args = parser.parse_args()
+
+    check_path(args.filepath)
+
+if __name__ == "__main__": 
+    main()
+
+
