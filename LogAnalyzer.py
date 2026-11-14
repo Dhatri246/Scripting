@@ -1,5 +1,6 @@
 import os
 import argparse
+from dataclasses import dataclass
 
 
 def check_path(file_path):
@@ -16,10 +17,10 @@ def read_file(file_path):
     #file = open(file_path).read()
     # Using 'with' ensures the file is safely closed after reading
         for line in file:
-            if "connection error" in line.lower():
+            if "error" in line.lower():
                 print(line.strip())
-            else:
-                print("no error")       #debug
+            # else:
+            #     print("no error")       #debug
     
 
 def main():
@@ -28,11 +29,15 @@ def main():
     # check_path(file_path)
 
     parser = argparse.ArgumentParser(description = "Scan and filter log files.") 
+  
     parser.add_argument("-f", "--filepath", required=True, help="path to log file")
 
-    args = parser.parse_args()
+    args = parser.parse_args()             
 
     check_path(args.filepath)
+
+
+
 
 if __name__ == "__main__": 
     main()

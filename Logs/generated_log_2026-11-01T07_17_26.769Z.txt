@@ -1,0 +1,117 @@
+server17 login: user
+Password: 
+Last login: Nov 01, 2026, 07:17:15 from 10.0.230.118
+Welcome to Ubuntu 20.04.2 LTS (GNU/Linux 5.4.0-42-generic x86_64)
+
+  System information as of Nov 01, 2026, 07:17:15
+
+  System load:  0.27              Processes:             123
+  Usage of /:   61.1% of 98.30GB   Users logged in:       1
+  Memory usage: 29.4%               IPv4 address for eth0: 192.168.152.186
+  Swap usage:   0%
+
+user@server17:~$ sudo tail -n 100 /var/log/application.log
+[sudo] password for user: 
+
+2026-10-31T08:48:27.548Z server17 AuthController [ERROR]: Operation failed for user 436
+2026-10-26T15:47:06.876Z server17 DatabaseConnector [ERROR]: Operation failed for user 594
+2026-10-26T23:55:09.311Z server17 AuthController [INFO]: Operation completed for user 181
+2026-10-26T17:52:28.246Z server17 UserService [WARN]: Operation pending for user 620
+2026-10-31T18:17:01.572Z server17 DatabaseConnector [WARN]: Operation completed for user 156
+2026-10-25T13:33:11.751Z server17 UserService [WARN]: Operation completed for user 423
+2026-10-30T01:52:33.487Z server17 UserService [DEBUG]: Operation pending for user 478
+2026-10-28T10:18:08.927Z server17 PaymentGateway [WARN]: Operation started for user 171
+2026-10-29T22:55:28.665Z server17 PaymentGateway [WARN]: Operation started for user 810
+2026-10-26T14:32:44.647Z server17 DatabaseConnector [DEBUG]: Operation completed for user 945
+2026-10-25T19:15:08.105Z server17 PaymentGateway [DEBUG]: Operation started for user 835
+2026-10-28T19:55:33.183Z server17 PaymentGateway [DEBUG]: Operation started for user 310
+2026-10-28T06:25:51.358Z server17 UserService [WARN]: Operation started for user 936
+2026-10-29T01:11:26.457Z server17 PaymentGateway [ERROR]: Operation pending for user 480
+2026-10-28T16:10:07.354Z server17 DatabaseConnector [WARN]: Operation started for user 153
+2026-10-27T15:39:33.720Z server17 DatabaseConnector [WARN]: Operation pending for user 887
+2026-10-29T13:56:35.895Z server17 AuthController [WARN]: Operation completed for user 529
+2026-10-28T12:25:27.294Z server17 AuthController [INFO]: Operation pending for user 507
+2026-10-26T08:01:26.240Z server17 UserService [INFO]: Operation started for user 638
+2026-10-25T17:03:27.238Z server17 PaymentGateway [DEBUG]: Operation started for user 975
+2026-10-31T19:51:36.387Z server17 DatabaseConnector [ERROR]: Operation failed for user 120
+2026-10-30T00:44:59.362Z server17 DatabaseConnector [WARN]: Operation started for user 140
+2026-10-31T13:51:02.072Z server17 AuthController [WARN]: Operation pending for user 516
+2026-10-31T18:21:26.179Z server17 UserService [INFO]: Operation started for user 679
+2026-10-29T11:02:20.022Z server17 PaymentGateway [DEBUG]: Operation failed for user 590
+2026-10-28T02:54:38.214Z server17 DatabaseConnector [INFO]: Operation failed for user 712
+2026-10-30T02:56:47.037Z server17 PaymentGateway [ERROR]: Operation started for user 478
+2026-10-30T14:57:17.687Z server17 UserService [INFO]: Operation completed for user 481
+2026-10-29T20:39:42.352Z server17 PaymentGateway [WARN]: Operation pending for user 623
+2026-10-30T11:51:53.751Z server17 DatabaseConnector [ERROR]: Operation started for user 975
+2026-10-26T18:38:29.639Z server17 DatabaseConnector [ERROR]: Operation failed for user 541
+2026-10-26T08:48:53.060Z server17 DatabaseConnector [INFO]: Operation failed for user 306
+2026-10-26T14:27:29.118Z server17 PaymentGateway [ERROR]: Operation started for user 205
+2026-10-31T07:01:53.682Z server17 UserService [ERROR]: Operation failed for user 631
+2026-10-29T02:03:49.602Z server17 DatabaseConnector [DEBUG]: Operation pending for user 114
+2026-10-25T18:35:23.215Z server17 AuthController [DEBUG]: Operation completed for user 614
+2026-10-26T13:17:43.855Z server17 PaymentGateway [DEBUG]: Operation started for user 386
+2026-10-30T17:53:25.659Z server17 AuthController [WARN]: Operation completed for user 403
+2026-11-01T00:05:36.979Z server17 UserService [WARN]: Operation pending for user 501
+2026-10-30T13:06:56.016Z server17 UserService [ERROR]: Operation started for user 98
+2026-10-28T19:53:06.726Z server17 DatabaseConnector [ERROR]: Operation started for user 875
+2026-10-27T12:48:21.409Z server17 AuthController [ERROR]: Operation pending for user 371
+2026-10-28T03:15:52.594Z server17 DatabaseConnector [DEBUG]: Operation started for user 333
+2026-10-29T07:18:32.732Z server17 DatabaseConnector [DEBUG]: Operation failed for user 557
+2026-10-31T07:41:16.282Z server17 PaymentGateway [ERROR]: Operation failed for user 207
+2026-10-28T08:31:07.790Z server17 UserService [INFO]: Operation failed for user 922
+2026-10-31T04:03:28.110Z server17 UserService [WARN]: Operation pending for user 444
+2026-10-31T08:23:28.703Z server17 AuthController [DEBUG]: Operation pending for user 627
+2026-10-28T16:53:37.668Z server17 DatabaseConnector [INFO]: Operation completed for user 152
+2026-10-27T23:48:40.918Z server17 UserService [DEBUG]: Operation started for user 948
+2026-10-31T19:57:00.983Z server17 AuthController [INFO]: Operation completed for user 123
+2026-10-28T11:39:41.495Z server17 AuthController [DEBUG]: Operation started for user 343
+2026-10-30T07:26:18.390Z server17 UserService [WARN]: Operation completed for user 202
+2026-10-28T04:54:49.384Z server17 DatabaseConnector [ERROR]: Operation started for user 0
+2026-10-25T09:25:18.087Z server17 AuthController [INFO]: Operation pending for user 610
+2026-10-25T15:45:47.026Z server17 AuthController [ERROR]: Operation completed for user 873
+2026-10-31T13:06:49.162Z server17 AuthController [INFO]: Operation completed for user 943
+2026-10-29T19:30:44.399Z server17 UserService [ERROR]: Operation failed for user 674
+2026-10-27T18:40:34.275Z server17 PaymentGateway [INFO]: Operation completed for user 216
+2026-10-29T17:07:28.708Z server17 PaymentGateway [ERROR]: Operation completed for user 853
+2026-10-27T01:12:24.243Z server17 UserService [WARN]: Operation completed for user 657
+2026-10-31T15:04:02.095Z server17 UserService [INFO]: Operation started for user 129
+2026-10-27T03:32:23.033Z server17 AuthController [ERROR]: Operation pending for user 846
+2026-10-31T03:30:48.388Z server17 UserService [WARN]: Operation started for user 349
+2026-10-28T15:00:51.425Z server17 PaymentGateway [INFO]: Operation failed for user 793
+2026-10-25T10:48:51.374Z server17 DatabaseConnector [INFO]: Operation failed for user 409
+2026-10-29T13:12:04.554Z server17 PaymentGateway [DEBUG]: Operation failed for user 303
+2026-10-30T09:20:59.906Z server17 PaymentGateway [INFO]: Operation completed for user 975
+2026-10-26T13:17:37.386Z server17 PaymentGateway [INFO]: Operation started for user 229
+2026-10-31T09:35:21.293Z server17 AuthController [ERROR]: Operation started for user 517
+2026-10-30T09:18:58.665Z server17 DatabaseConnector [INFO]: Operation started for user 904
+2026-10-30T13:08:41.425Z server17 UserService [ERROR]: Operation completed for user 346
+2026-10-29T04:59:56.423Z server17 DatabaseConnector [ERROR]: Operation completed for user 85
+2026-10-30T09:54:20.912Z server17 UserService [WARN]: Operation failed for user 51
+2026-10-26T09:59:28.566Z server17 UserService [DEBUG]: Operation pending for user 263
+2026-10-30T06:20:04.889Z server17 DatabaseConnector [INFO]: Operation started for user 35
+2026-10-27T23:58:00.572Z server17 UserService [INFO]: Operation started for user 638
+2026-10-28T06:56:16.118Z server17 PaymentGateway [DEBUG]: Operation pending for user 619
+2026-10-31T09:40:42.063Z server17 DatabaseConnector [DEBUG]: Operation completed for user 983
+2026-10-28T01:07:44.328Z server17 UserService [WARN]: Operation completed for user 334
+2026-10-30T06:06:32.291Z server17 AuthController [INFO]: Operation failed for user 230
+2026-10-29T10:43:24.114Z server17 DatabaseConnector [ERROR]: Operation completed for user 293
+2026-10-30T17:28:13.464Z server17 AuthController [ERROR]: Operation started for user 303
+2026-10-25T09:04:55.526Z server17 AuthController [ERROR]: Operation pending for user 186
+2026-10-27T19:58:40.316Z server17 DatabaseConnector [WARN]: Operation pending for user 897
+2026-10-30T23:07:29.787Z server17 UserService [WARN]: Operation started for user 630
+2026-10-29T08:44:33.000Z server17 UserService [INFO]: Operation failed for user 322
+2026-10-27T13:34:33.034Z server17 AuthController [WARN]: Operation failed for user 280
+2026-10-31T07:53:38.209Z server17 DatabaseConnector [DEBUG]: Operation pending for user 159
+2026-10-30T18:48:23.721Z server17 UserService [DEBUG]: Operation completed for user 305
+2026-10-30T18:08:04.400Z server17 UserService [DEBUG]: Operation failed for user 594
+2026-10-31T10:39:02.130Z server17 AuthController [WARN]: Operation completed for user 328
+2026-10-29T11:41:16.111Z server17 UserService [WARN]: Operation completed for user 498
+2026-10-29T16:29:02.221Z server17 PaymentGateway [WARN]: Operation started for user 888
+2026-10-29T16:59:19.228Z server17 UserService [WARN]: Operation completed for user 874
+2026-10-30T02:11:18.862Z server17 AuthController [INFO]: Operation failed for user 579
+2026-10-25T10:27:00.293Z server17 AuthController [WARN]: Operation failed for user 485
+2026-10-26T21:32:05.963Z server17 DatabaseConnector [ERROR]: Operation pending for user 357
+2026-10-28T19:04:57.812Z server17 PaymentGateway [INFO]: Operation completed for user 903
+2026-10-28T16:51:21.546Z server17 UserService [DEBUG]: Operation started for user 904
+
+user@server17:~$ 
